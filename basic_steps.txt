@@ -1,6 +1,6 @@
-Do always when creating django app
+Do always when creating django app # py manage.py startapp 'app_name'
 
-1. Move folder to basic project folder
+1. Move folder to basic project folder # Optional
 2. create urls.py file in main_app folder
 3. reg urls.py in project urls.py
-4. Register Django app in settings
+4. Register Django app in settings # add it in INSTALLED APPS in settings

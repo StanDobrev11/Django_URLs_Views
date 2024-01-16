@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'urls_and_views_project.departments'
 ]
 
 MIDDLEWARE = [
@@ -76,8 +78,12 @@ WSGI_APPLICATION = 'urls_and_views_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django_basics_db',
+        'USER': 'postgres',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',  # Set to the address of your PostgreSQL server.
+        'PORT': '5432',  # The default PostgreSQL port.
     }
 }
 
